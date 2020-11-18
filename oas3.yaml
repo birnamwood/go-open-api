@@ -21,11 +21,11 @@ paths:
       parameters:
         - name: limit
           in: query
-          description: maximum number of results to return
+          description: 件数制限
           required: false
           schema:
             type: integer
-            format: intAPI
+            format: int32
       responses:
         '200':
           description: user response
@@ -79,7 +79,7 @@ paths:
           required: true
           schema:
             type: integer
-            format: int
+            format: int64
       responses:
         '200':
           description: user response
